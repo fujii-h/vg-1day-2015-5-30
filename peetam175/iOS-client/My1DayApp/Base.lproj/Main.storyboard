@@ -28,7 +28,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGx-b7-nVX">
-                                            <rect key="frame" x="73" y="40" width="221" height="21"/>
+                                            <rect key="frame" x="73" y="40" width="75" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDd-oI-a0n">
+                                            <rect key="frame" x="214" y="40" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -38,6 +44,7 @@
                                 <connections>
                                     <outlet property="iconImageView" destination="rB6-1N-vrf" id="qKn-zx-yfW"/>
                                     <outlet property="messageLabel" destination="RPy-Rd-KYT" id="6X3-KT-Lfn"/>
+                                    <outlet property="nameName" destination="oDd-oI-a0n" id="zlb-v4-HNr"/>
                                     <outlet property="timrLabel" destination="TGx-b7-nVX" id="Hhc-iw-gRN"/>
                                 </connections>
                             </tableViewCell>

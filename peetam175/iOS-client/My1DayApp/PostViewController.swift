@@ -17,6 +17,8 @@ class PostViewController: UIViewController {
     weak var delegate: PostViewControllerDelagate?
     // Mission1-2 Storyboard から UITextField のインスタンス変数を追加
     @IBOutlet weak var titleLabel: UITextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +41,6 @@ class PostViewController: UIViewController {
         
         
         // Mission1-2 posetMessage の第2引数に 任意の値を渡す
-        
-        
         APIRequest.postMessage(message, username: name) {
             [weak self] (data, response, error) -> Void in
             

@@ -14,11 +14,13 @@ class MessageTableViewCell: UITableViewCell {
     // Mission1-1 UILabel のインスタンス変数を追加
     @IBOutlet weak var timrLabel: UILabel!
     
+    @IBOutlet weak var nameName: UILabel!
     override func prepareForReuse() {
         self.iconImageView.image = nil
         self.messageLabel.text = nil
         // Mission1-1 UILabel のインスタンス変数を初期化
         self.timrLabel.text = nil
+        self.nameName.text = nil
     }
     
     func setupComponentsWithMessage(message: Message) {
@@ -26,5 +28,6 @@ class MessageTableViewCell: UITableViewCell {
         self.messageLabel.text = message.body
         // Mission1-1 UILabel のインスタンス変数に created_at の値を代入
         self.timrLabel.text = message.time
+        //self.nameName.text = message.
     }
 }
