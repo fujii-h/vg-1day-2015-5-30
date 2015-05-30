@@ -22,10 +22,30 @@ $app->post('/messages', function (Request $request) use ($app) {
 
     $username = isset($data['username']) ? $data['username'] : '';
     $body = isset($data['body']) ? $data['body'] : '';
-    $botname = 'bot';
 
+    /* $createdMessage = $app->createMessage($username, $body, base64_encode(file_get_contents($app['icon_image_path']))); */
+
+/*    $createdMessage = $app->createMessage("bot", $body, base64_encode(file_get_contents($app['icon_image_path']))); */
+
+    $num = mt_rand(0,4);
+
+    if($num == 0){
+        $username = "Nobunaga Oda";
+    }else if($num == 1){
+        $username = "Naichinge-ru";
+    }else if($num == 2){
+        $username = "Zabieru";
+    }else if($num == 3){
+        $username = "Ainshutain";
+    }else if($num == 4){
+        $username = "Himiko";
+    }
+
+/*
+    if($username == "uranai"){
+    $createdMessage = $app->createMessage("Bot", "Daikichi", base64_encode(file_get_contents($app['icon_image_path'])));
+    }else{ */
     $createdMessage = $app->createMessage($username, $body, base64_encode(file_get_contents($app['icon_image_path'])));
-	$createdMessage = $app->createMessage($botname, $body, base64_encode(file_get_contents($app['icon_image_path'])));
 
     return $app->json($createdMessage);
 });
