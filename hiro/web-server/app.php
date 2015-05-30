@@ -30,15 +30,15 @@ $app->post('/messages', function (Request $request) use ($app) {
     $num = mt_rand(0,4);
 
     if($num == 0){
-        $body = "Nobunaga Oda";
+        $username = "Nobunaga Oda";
     }else if($num == 1){
-        $body = "Naichinge-ru";
+        $username = "Naichinge-ru";
     }else if($num == 2){
-        $body = "Zabieru";
+        $username = "Zabieru";
     }else if($num == 3){
-        $body = "Ainshutain";
+        $username = "Ainshutain";
     }else if($num == 4){
-        $body = "Himiko";
+        $username = "Himiko";
     }
 
 /*
